@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor
+	xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
+	name="morseflash-parent"
+	xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<requiredProperties>
+		<requiredProperty key="name" />
+		<requiredProperty key="instrumentation">
+			<defaultValue>instrumentation</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="classPrefix" />
+	</requiredProperties>
+	<modules>
+		<module id="${rootArtifactId}-lib" dir="__rootArtifactId__-lib"
+			name="${rootArtifactId}-lib">
+			<fileSets>
+				<fileSet filtered="true" encoding="UTF-8" packaged="true">
+					<directory>src/main/java</directory>
+					<includes>
+						<include>**/*.java</include>
+					</includes>
+				</fileSet>
+				<fileSet filtered="true" encoding="UTF-8" packaged="true">
+					<directory>src/test/java</directory>
+					<includes>
+						<include>**/*.java</include>
+					</includes>
+				</fileSet>
+			</fileSets>
+		</module>
+		<module id="${rootArtifactId}-app" dir="__rootArtifactId__-app"
+			name="${rootArtifactId}-app">
+			<fileSets>
+				<fileSet filtered="true" encoding="UTF-8" packaged="true">
+					<directory>src</directory>
+					<includes>
+						<include>**/*.java</include>
+					</includes>
+				</fileSet>
+				<fileSet filtered="true" encoding="UTF-8" packaged="true">
+					<directory>test</directory>
+					<includes>
+						<include>**/*.java</include>
+					</includes>
+				</fileSet>
+				<fileSet encoding="UTF-8" filtered="true">
+					<directory></directory>
+					<includes>
+						<include>AndroidManifest.xml</include>
+						<include>proguard.cfg</include>
+						<include>project.properties</include>
+					</includes>
+				</fileSet>
+				<fileSet filtered="true" encoding="UTF-8">
+					<directory>res</directory>
+					<includes>
+						<include>layout/**/*.*</include>
+						<include>values/**/*.*</include>
+					</includes>
+				</fileSet>
+				<fileSet filtered="false" encoding="UTF-8">
+					<directory>res</directory>
+					<includes>
+					 <include>drawable-hdpi/**/*.*</include>
+					 <include>drawable-mdpi/**/*.*</include>
+					 <include>drawable-hdpi/**/*.*</include>
+					</includes>
+				</fileSet>
+				<fileSet>
+				 <directory>gen</directory>
+				</fileSet>
+
+			</fileSets>
+		</module>
+		<module id="${rootArtifactId}-instrumentation" dir="__rootArtifactId__-instrumentation"
+			name="${rootArtifactId}-instrumentation">
+			<fileSets>
+				<fileSet filtered="true" encoding="UTF-8" packaged="true">
+					<directory>src/main/java</directory>
+					<includes>
+						<include>**/*.java</include>
+					</includes>
+				</fileSet>
+				<fileSet filtered="true" encoding="UTF-8" packaged="true">
+					<directory>src/test/java</directory>
+					<includes>
+						<include>**/*.java</include>
+					</includes>
+				</fileSet>
+				<fileSet filtered="false" encoding="UTF-8">
+					<directory>res</directory>
+				</fileSet>
+				<fileSet encoding="UTF-8" filtered="true">
+					<directory></directory>
+					<includes>
+						<include>AndroidManifest.xml</include>
+						<include>default.properties</include>
+					</includes>
+				</fileSet>
+			</fileSets>
+		</module>
+	</modules>
+</archetype-descriptor>
