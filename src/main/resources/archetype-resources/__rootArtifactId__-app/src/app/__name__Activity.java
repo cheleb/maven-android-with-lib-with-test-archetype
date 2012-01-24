@@ -1,6 +1,7 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
+#set( $lname = ${name.toLowerCase()})
 package ${package}.app;
 
 import android.app.Activity;
@@ -11,7 +12,7 @@ import android.widget.LinearLayout;
 
 
 /**
- * MorseFlashActivity is the actual activity that flashes the screen in morse code.
+ * ${name}Activity is the actual activity that flashes the screen in morse code.
  *
  * @author Manfred Moser <manfred@simpligility.com>
  */
@@ -22,7 +23,7 @@ public class ${name}Activity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.morseflash);
+        setContentView(R.layout.sub);
         page = (LinearLayout) findViewById(R.id.page);
 
         ${name}Application application = (${name}Application) getApplication();

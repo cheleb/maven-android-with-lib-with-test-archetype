@@ -24,7 +24,7 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 
 /**
- * A test suite containing all tests for MorseFlash.
+ * A test suite containing all tests for ${name}.
  */
 public class AllTests extends TestSuite {
 

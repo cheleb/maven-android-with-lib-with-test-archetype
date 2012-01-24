@@ -8,7 +8,7 @@ import android.content.pm.ApplicationInfo;
 import ${package}.app.os.StrictModeWrapper;
 
 /**
- * The MorseFlashApplication is a simple way to hold some data and make it accessible to any activity.
+ * The ${name}Application is a simple way to hold some data and make it accessible to any activity.
  *
  * @author Manfred Moser <manfred@simpligility.com>
  */

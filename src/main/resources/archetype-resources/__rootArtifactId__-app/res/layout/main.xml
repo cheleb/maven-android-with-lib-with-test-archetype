@@ -1,6 +1,7 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
+#set( $lname = ${name.toLowerCase()})
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
@@ -19,7 +20,7 @@
         />
     <Button
         android:id="@+id/morse"
-        android:text="@string/morseFlashNow"
+        android:text="@string/${lname}Now"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         />

@@ -30,7 +30,7 @@ import android.test.suitebuilder.annotation.SmallTest;
  *
  * To run this test, you can type:
  * adb shell am instrument -w ${symbol_escape}
- *   -e class com.example.android.apis.MorseFlashApiDemosApplicationTests ${symbol_escape}
+ *   -e class com.example.android.apis.${name}ApiDemosApplicationTests ${symbol_escape}
  *   com.example.android.apis.tests/android.test.InstrumentationTestRunner
  */
 public class ${name}ApplicationTests extends ApplicationTestCase<${name}Application> {

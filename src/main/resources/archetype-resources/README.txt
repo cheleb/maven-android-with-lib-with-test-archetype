@@ -1,9 +1,9 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-MorseFlash
+${name}
 
-MorseFlash is a (very) simple sample application written by Manfred Moser <manfred@simpligility.com>
+${name} is a (very) simple sample application written by Manfred Moser <manfred@simpligility.com>
 
 It was created to demonstrate the project setup needed to use the android-maven-plugin in a more complex project
 including separate libraries as well as instrumentation testing.

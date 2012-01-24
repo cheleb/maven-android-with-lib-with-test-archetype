@@ -3,6 +3,7 @@
 #set( $symbol_escape = '\' )
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="15" android:versionName="${version}" package="${package}.app">
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="9"/>
     <application android:debuggable="true" android:icon="@drawable/icon" android:label="@string/app_name" android:name="${name}Application">
         <activity android:label="@string/app_name" android:name="Configure${name}Activity">
             <intent-filter>
@@ -12,5 +13,4 @@
         </activity>
         <activity android:name="${name}Activity"/>
     </application>
-    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="9"/>
 </manifest>
