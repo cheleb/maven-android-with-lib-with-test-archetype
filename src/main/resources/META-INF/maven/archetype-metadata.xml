@@ -10,6 +10,13 @@
 			<defaultValue>instrumentation</defaultValue>
 		</requiredProperty>
 		<requiredProperty key="classPrefix" />
+		<requiredProperty key="minSdkVersion">
+		  <defaultValue>17</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="targetSdkVersion">
+		  <defaultValue>17</defaultValue>
+		</requiredProperty>
+		
 	</requiredProperties>
 	<modules>
 		<module id="${rootArtifactId}-lib" dir="__rootArtifactId__-lib"
