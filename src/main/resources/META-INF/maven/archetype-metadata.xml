@@ -11,10 +11,10 @@
 		</requiredProperty>
 		<requiredProperty key="classPrefix" />
 		<requiredProperty key="minSdkVersion">
-		  <defaultValue>17</defaultValue>
+		  <defaultValue>18</defaultValue>
 		</requiredProperty>
 		<requiredProperty key="targetSdkVersion">
-		  <defaultValue>17</defaultValue>
+		  <defaultValue>18</defaultValue>
 		</requiredProperty>
 		
 	</requiredProperties>
